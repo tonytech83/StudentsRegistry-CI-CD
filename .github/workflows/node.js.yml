@@ -30,5 +30,8 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+      - name: Sleep for 10 seconds
+        run: sleep 10 seconds
+
       - name: Execute tests
         run: npm test
