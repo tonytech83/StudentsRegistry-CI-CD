@@ -35,7 +35,7 @@ jobs:
 
       - name: Execute tests
         run: npm test
-  
+
   test-security:
     needs: build-and-test
     runs-on: ubuntu-latest
@@ -72,4 +72,4 @@ jobs:
         with:
           service-id: ${{ secrets.SERVICE_ID }}
           api-key: ${{ secrets.RENDER_TOKEN }}
-          wait-for-success: true   
+          wait-for-success: true
