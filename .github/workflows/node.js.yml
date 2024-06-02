@@ -56,5 +56,8 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+      - name: Address all issues
+        run: npm audit fix --force
+
       - name: Execute npm security tests
         run: npm run test-security
