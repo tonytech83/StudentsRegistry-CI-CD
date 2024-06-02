@@ -37,6 +37,7 @@ jobs:
         run: npm test
   
   test-security:
+    needs: build-and-test
     runs-on: ubuntu-latest
 
     strategy:
